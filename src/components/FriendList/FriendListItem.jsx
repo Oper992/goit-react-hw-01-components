@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
+import style from './friendList.module.css';
 
-export default function FriendListItem({ avatar, isOnline, key, name }) {
-
+export default function FriendListItem({ avatar, isOnline, name }) {
   return (
-    <li key={key} className="item" >
-      <span className="status">{isOnline}</span>
+    <li className={style.list}>
+      <span className={style.IsOnline}></span>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <p className="name">{name}</p>
     </li>
@@ -14,6 +14,5 @@ export default function FriendListItem({ avatar, isOnline, key, name }) {
 FriendListItem.propTypes = {
   avatar: PropTypes.string,
   isOnline: PropTypes.bool.isRequired,
-  key: PropTypes.number.isRequired,
   name: PropTypes.string,
 };
