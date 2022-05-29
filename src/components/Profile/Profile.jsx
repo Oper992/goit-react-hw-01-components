@@ -13,7 +13,7 @@ const Profile = ({
   return (
     <div className={style.profile}>
       <div>
-        <img src={avatar} alt="User avatar" class={style.avatar} />
+        <img src={avatar} alt="User avatar" className={style.avatar} />
         <p className={style.name}>{username}</p>
         <p>@{tag}</p>
         <p>{location}</p>
