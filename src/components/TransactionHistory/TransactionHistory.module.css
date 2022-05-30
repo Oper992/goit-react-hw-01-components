@@ -1,0 +1,14 @@
+.transactionHistory {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background-color: aquamarine;
+  height: 50px;
+}
+
+.line{
+    background-color: bisque;
+}

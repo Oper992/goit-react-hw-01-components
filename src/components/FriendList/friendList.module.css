@@ -4,27 +4,23 @@
   display: flex;
   align-items: center;
   list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.isOnline::after {
-  content: '';
-  display: block;
+.online {
   margin-right: 10px;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  border-radius: 50%;
   background-color: green;
 }
 
-.notIsOnline {
-  composes: isOnline;
+.offline {
+  composes: online;
+  background-color: red;
 }
 
-.notIsOnline {
-  margin-right: 10px;
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background-color: red;
+.avatar {
+  margin-right: 50px;
 }
