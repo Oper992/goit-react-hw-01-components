@@ -19,10 +19,10 @@ export default function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array.arrayOf(
+  friends: PropTypes.arrayOf(
     PropTypes.exact({
       avatar: PropTypes.string.isRequired,
-      id: PropTypes.number,
+      id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
     })
